@@ -37,7 +37,7 @@ mv('internals/templates/utils', 'app')
 
 // Replace the files in the root app/ folder
 cp('internals/templates/app.js', 'app/app.js');
-cp('internals/templates/global-styles.js', 'app/global-styles.js');
+// cp('internals/templates/global-styles.js', 'app/global-styles.js');
 cp('internals/templates/i18n.js', 'app/i18n.js');
 cp('internals/templates/index.html', 'app/index.html');
 cp('internals/templates/reducers.js', 'app/reducers.js');

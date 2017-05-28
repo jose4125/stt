@@ -1,9 +1,11 @@
 import React from 'react'
 import Helmet from 'react-helmet'
 
+import Menu from 'containers/Menu'
+
 export function App(props) {
   return (
-    <div>
+    <div className="app">
       <Helmet
         titleTemplate="%s - React.js Boilerplate"
         defaultTitle="React.js Boilerplate"
@@ -11,7 +13,12 @@ export function App(props) {
           { name: 'description', content: 'A React.js Boilerplate application' },
         ]}
       />
-      {React.Children.toArray(props.children)}
+      <section className="menu">
+        <Menu />
+      </section>
+      <section className="content">
+        {React.Children.toArray(props.children)}
+      </section>
     </div>
   )
 }

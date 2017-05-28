@@ -41,6 +41,7 @@ import { translationMessages } from './i18n'
 
 // Import CSS reset and Global Styles
 // import './global-styles'
+import 'semantic-ui-css/semantic.min.css';
 import './app.scss'
 
 // Import routes

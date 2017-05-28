@@ -1,0 +1,30 @@
+@import '../../index';
+
+.menu-list {
+  padding: 0;
+  list-style: none;
+}
+
+.menu-list-header {
+  padding: 10px 25px;
+  margin-bottom: 20px;
+}
+
+.menu-list-avatar {
+  background: $PYRGray;
+  height: 50px;
+  width: 50px;
+  border-radius: 50px;
+  display: block;
+}
+
+.menu-list-user {
+  color: $PYRDarkGreen;
+  font-size: 0.8rem;
+  margin: 5px 0;
+}
+
+.menu-list-date {
+  color: $PRYGrayFontNav;
+  font-size: 0.7rem;
+}

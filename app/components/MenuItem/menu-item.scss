@@ -1,0 +1,17 @@
+@import '../../index';
+
+.menu-list-link  {
+  color: $PRYGrayFontNav;
+  display: block;
+  padding: 14px 23px;
+
+  &:hover {
+    background: $PRYBlueNavActive;
+    border-left: 3px solid $PRYGreenActive;
+    color: $PRYGrayFontNavActive;
+  }
+}
+
+.menu-list-link span {
+  margin-left: 5px;
+}

@@ -1,0 +1,17 @@
+@import '../../index';
+
+.header {
+  border-bottom: 1px solid $PYRLabelGrayBoder;
+  display: flex;
+  padding: 15px;
+  align-content: center;
+}
+
+.header-title {
+  font-size: 0.9rem;
+  margin: 0;
+}
+
+.header-cta {
+  margin-left: auto;
+}

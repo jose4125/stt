@@ -1,0 +1,190 @@
+{
+  "empresa": {
+    "empresa1": {
+      "name": "ritz",
+      "document": "NIT",
+      "nit": "12345678-4",
+      "metaDelDia": 1950000
+    }
+  },
+  "usuarios": {
+    "usuario1":{
+      "name": "jose david",
+      "lastName": "lombana",
+      "email": "jose4125@gmail.com",
+      "password": "bla",
+      "phone": 3192475845,
+      "address": "carrera 12 # 138 - 72",
+      "opts": "104",
+      "role": "role1",
+      "active": true,
+      "apertura": {
+        "apertura1": true
+      },
+      "ventas": {
+        "venta1": true
+      }
+    }
+  },
+  "roles": {
+    "role1": {
+      "name": "mesero",
+      "usuarios": {
+        "usuario1": true
+      }
+    }
+  },
+  "cajas":{
+    "caja1": {
+      "name": "caja menor",
+      "amount": 700000,
+      "gastos": {
+        "gastos1": true
+      }
+    }
+  },
+  "apertura": {
+    "apertura1": {
+      "amount": 500000,
+      "date": "21-05.2017",
+      "who": "usuario1"
+    }
+  },
+  "formasDePago": {
+    "forma1": {
+      "name": "efectivo",
+      "gastos": {
+        "gastos1": true
+      }
+    }
+  },
+  "mesas": {
+    "mesa1": {
+      "name": "mesa1",
+      "ventas": {
+        "venta1": true
+      }
+    }
+  },
+  "ventas": {
+    "venta1": {
+      "ventaEspera": true,
+      "mesa": "mesa1",
+      "vendedor": "usuario1",
+      "productos": {
+        "producto1": {
+          "producto": "producto1",
+          "cantidad": 2
+        },
+        "producto2": {
+          "producto": "producto3",
+          "cantidad": 2
+        }
+      },
+      "date": "21-05.2017",
+      "nota": "bla",
+      "total": 35000
+    }
+  },
+  "productos": {
+    "producto1": {
+      "category": "category1",
+      "name": "carne",
+      "code": "P1",
+      "precioCompra": 5500,
+      "precioVenta": 11000,
+      "unidad": "unidad",
+      "ventaConImpuesto": 11000,
+      "active": true,
+      "ventas": {
+        "venta1": true
+      }
+    }
+  },
+  "categorias": {
+    "category1": {
+      "name": "plato",
+      "code": "C1",
+      "active": true,
+      "productos": {
+        "producto1": true
+      }
+    },
+    "category2": {
+      "name": "ingredientes",
+      "code": "C2",
+      "active": true,
+      "materiales": {
+        "material1": true
+      }
+    }
+  },
+  "movimientos": {
+    "movimiento1": {
+      "cantidad": 50,
+      "name": "material1",
+      "code": "IN1",
+      "date": "21-05.2017"
+    }
+  },
+  "materiales":{
+    "material1": {
+      "category": "category2",
+      "name": "carne de res",
+      "code": "IN1",
+      "precioCompra": 0,
+      "active": true,
+      "cantidadActual": 62,
+      "stockMinimo": 0,
+      "movimientos": {
+        "movimiento1": true
+      }
+    }
+  },
+  "gastos": {
+    "gastos1": {
+      "proveedor": "proveedor1",
+      "description": "",
+      "date": "21-05.2017",
+      "almacen": "",
+      "formaDePago": "forma1",
+      "amount": 25400,
+      "cantidad": 3,
+      "impuesto": 0,
+      "cuentasDeDinero": "caja1"
+    }
+  },
+  "clientes": {
+    "cliente1": {
+      "name": "cafe 190",
+      "phone": 316784345,
+      "email": "cliente1@gmail.com"
+    }
+  },
+  "proveedores": {
+    "proveedor1": {
+      "comercialName": "fruver",
+      "nit": "89564345-4",
+      "contact": "pepito perez",
+      "email": "fruver@bla.com",
+      "direccion": "carrera 34 # 128 - 45",
+      "phone": 3195683423,
+      "compayType": "bla",
+      "bankAcount": "citi",
+      "bankAcountNumber": 23456778,
+      "gastos": {
+        "gasto1": true
+      }
+    }
+  }
+}
+
+// 1 categorias
+// 2 productos
+// 3 materiales
+// 4 movimientos
+// 5 ventas
+// 6 mesas
+// 7 usuarios
+// 8 roles
+// 9 aperturas

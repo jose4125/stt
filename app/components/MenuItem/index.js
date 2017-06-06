@@ -5,12 +5,9 @@ import { Link } from 'react-router'
 
 import './menu-item.scss'
 
-
-
 function MenuItem(props) {
-  const goTo = '/' + props.item
-  console.log('props', props)
-  const iconClass = 'fa ' + props.message.icon
+  const goTo = `/${props.item}`
+  const iconClass = `fa ${props.message.icon}`
   return (
     <li className="menu-list-item">
       <Link className="menu-list-link" to={goTo}>
@@ -19,6 +16,11 @@ function MenuItem(props) {
       </Link>
     </li>
   )
+}
+
+MenuItem.propTypes = {
+  item: React.PropTypes.string,
+  message: React.PropTypes.any,
 }
 
 export default MenuItem

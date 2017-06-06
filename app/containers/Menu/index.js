@@ -23,7 +23,7 @@ export class Menu extends React.PureComponent {
       <ul className="menu-list">
         <li className="menu-list-header">
           <piture className="menu-list-avatar">
-            <img className="menu-list-image" src="" alt=""/>
+            <img className="menu-list-image" src="" alt="" />
           </piture>
           <h3 className="menu-list-user">Jose David Lombana</h3>
           <p className="menu-list-date">27 - 05 - 2017</p>

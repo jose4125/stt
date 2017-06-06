@@ -39,6 +39,48 @@ export default function createRoutes(store) {
         importModules.catch(errorLoading)
       },
     }, {
+      path: '/categorias',
+      name: 'categorias',
+      getComponent(nextState, cb) {
+        const importModules = Promise.all([
+          import('containers/CategoriesPage/reducer'),
+          import('containers/CategoriesPage/sagas'),
+          import('containers/CategoriesPage'),
+        ])
+
+        const renderRoute = loadModule(cb)
+
+        importModules.then(([reducer, sagas, component]) => {
+          injectReducer('categories', reducer.default)
+          injectSagas(sagas.default)
+
+          renderRoute(component)
+        })
+
+        importModules.catch(errorLoading)
+      },
+    }, {
+      path: '/categorias/nueva',
+      name: 'newCategory',
+      getComponent(nextState, cb) {
+        const importModules = Promise.all([
+          import('containers/CategoriesPage/reducer'),
+          import('containers/CategoriesPage/sagas'),
+          import('containers/CategoriesPage'),
+        ])
+
+        const renderRoute = loadModule(cb)
+
+        importModules.then(([reducer, sagas, component]) => {
+          injectReducer('categories', reducer.default)
+          injectSagas(sagas.default)
+
+          renderRoute(component)
+        })
+
+        importModules.catch(errorLoading)
+      },
+    }, {
       path: '/features',
       name: 'features',
       getComponent(nextState, cb) {

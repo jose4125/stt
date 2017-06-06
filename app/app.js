@@ -7,6 +7,7 @@
 
 // Needed for redux-saga es6 generator support
 import 'babel-polyfill'
+import 'utils/firebase'
 
 // Import all the third party stuff
 import React from 'react'
@@ -17,6 +18,7 @@ import { syncHistoryWithStore } from 'react-router-redux'
 import FontFaceObserver from 'fontfaceobserver'
 import { useScroll } from 'react-router-scroll'
 import 'sanitize.css/sanitize.css'
+import 'semantic-ui-css/semantic.min.css'
 
 // Import root app
 import App from 'containers/App'
@@ -41,7 +43,6 @@ import { translationMessages } from './i18n'
 
 // Import CSS reset and Global Styles
 // import './global-styles'
-import 'semantic-ui-css/semantic.min.css';
 import './app.scss'
 
 // Import routes

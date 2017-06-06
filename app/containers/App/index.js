@@ -16,8 +16,11 @@ export function App(props) {
       <section className="menu">
         <Menu />
       </section>
-      <section className="content">
-        {React.Children.toArray(props.children)}
+      <section className="container">
+        <div className="submenu"></div>
+        <div className="content-data">
+          {React.Children.toArray(props.children)}
+        </div>
       </section>
     </div>
   )
